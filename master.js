@@ -1,9 +1,9 @@
-$(function(){ // Inicia Jquery
-    // Quando clicar no botão traz o resultado
+$(function(){ // Init Jquery
+    // when clicking the button, it brings the result,
     $(".btn").on("click", function(){
-        // Propriedade do ajax
+        // ajax property
         $.ajax({
-            url: "load.php", // arquivo onde estamos fazendo a requisição
+            url: "load.php", // File where we are making the request
             success: function(result){
                 $(".result").html(result);
             },
